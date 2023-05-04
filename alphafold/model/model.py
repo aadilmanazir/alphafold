@@ -26,6 +26,7 @@ import ml_collections
 import numpy as np
 import tensorflow.compat.v1 as tf
 import tree
+import alpa
 
 
 def get_confidence_metrics(
@@ -146,6 +147,7 @@ class RunModel:
     logging.info('Output shape was %s', shape)
     return shape
 
+  @alpa.parallelize
   def predict(self,
               feat: features.FeatureDict,
               random_seed: int,
