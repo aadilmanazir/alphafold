@@ -147,7 +147,7 @@ class RunModel:
     logging.info('Output shape was %s', shape)
     return shape
 
-  @alpa.parallelize
+#   @alpa.parallelize
   def predict(self,
               feat: features.FeatureDict,
               random_seed: int,
