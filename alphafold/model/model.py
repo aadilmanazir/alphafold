@@ -26,7 +26,7 @@ import ml_collections
 import numpy as np
 import tensorflow.compat.v1 as tf
 import tree
-import alpa
+# import alpa
 
 
 def get_confidence_metrics(
